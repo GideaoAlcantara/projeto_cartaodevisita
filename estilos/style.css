@@ -15,8 +15,7 @@
     src: url('../fonte/yrsa-bold.ttf') format('truetype');
 }
 
-
-@media screen and (max-width:600px){
+@media all {
     *{
         padding: 0px;
         margin: 0px;
@@ -37,6 +36,9 @@
         width: 100vw;
     }
 
+}
+
+@media  screen and (orientation:portrait){
     div#centro{
        
     
@@ -107,6 +109,8 @@
         color: #818181;
     }
 
+  
+
      .valor{
        color: #37725C;
        font-weight: bold;
@@ -117,25 +121,22 @@
 
      .botao{
           display: block;
-          margin: auto;
+          margin-left: -10px;
           width: 100%;
+          text-align: center;
+          text-decoration: none;
           font-weight: bold;
           padding: 10px;
           color: white;
           background-color:  #3F8068;
           font-size: 17px;
-         border-radius: 15px;
-         border-color: #3F8068;
-
+          border-radius: 15px;
+          border-color: #3F8068;
      }
-
-     .botao::after{
-
-   }
 
      .botao:hover{
         color:aliceblue;
-        background-color:  #57a287;
+        background-color:  #17513b;
        cursor: pointer;
    }
 }
