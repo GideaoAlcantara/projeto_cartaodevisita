@@ -140,3 +140,107 @@
        cursor: pointer;
    }
 }
+
+@media screen and (orientation:landscape) {
+    div#centro{
+        display: flex;
+    
+        background-color: white;
+       width: 700px; /*400 e 700*/
+       height: 490px;
+       border-radius: 20px;
+
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+
+       overflow: hidden;
+
+       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.114);
+    }
+
+    div#centro>div#imagem{
+        background-image: url('../images/image-product-desktop.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 50%;/*400 e 280 e max-width*/
+        height: 100%;
+    }
+
+    div#centro>div#corpo{
+        padding: 20px;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#centro>div#corpo>h1{
+        font-family: monospace;
+        font-weight: lighter;
+        font-size: 1.7em;
+        color: #A7A9B5;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.121);
+        text-align: left;
+        margin-bottom: 20px;
+      
+    }
+
+    div#centro>div#corpo>h2{
+        font-family: var(--baixo);
+        font-size: 3em ;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    div#centro>div#corpo>p{
+        font-family: Arial, Helvetica, sans-serif;
+      color: #9f9fa3;
+      text-shadow: 1px 1px 1px #00000017;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .caixa{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .caixa>small>del{
+        font-size: 20px;
+        color: #818181;
+    }
+
+  
+
+     .valor{
+       color: #37725C;
+       font-weight: bold;
+       font-size: 3em;
+       margin-right: 20px;
+      
+     }
+
+     .botao{
+          display: block;
+          margin-left: -10px;
+          width: 100%;
+          text-align: center;
+          text-decoration: none;
+          font-weight: bold;
+          padding: 10px;
+          color: white;
+          background-color:  #3F8068;
+          font-size: 17px;
+          border-radius: 15px;
+          border-color: #3F8068;
+     }
+
+     .botao:hover{
+        color:aliceblue;
+        background-color:  #17513b;
+       cursor: pointer;
+   }
+}
